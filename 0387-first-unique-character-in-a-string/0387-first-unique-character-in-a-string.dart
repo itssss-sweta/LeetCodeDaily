@@ -1,6 +1,6 @@
 class Solution {
   int firstUniqChar(String s) {
-      int output = -1; // Initialize output to -1 (assuming no unique character is found)
+      int output = -1; 
     for (int i = 0; i < s.length; i++) {
       bool isUnique = true;
       for (int j = 0; j < s.length; j++) {
@@ -11,7 +11,7 @@ class Solution {
       }
       if (isUnique) {
         output = i;
-        break; // Break out of the loop once a unique character is found
+        break; 
       }
     }
     print(output);
