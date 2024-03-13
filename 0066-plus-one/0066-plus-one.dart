@@ -7,13 +7,19 @@ class Solution {
     if (sumString.length == 1) {
       array[i] = sum;
       break;
-    } else {
-      array[i] =sum % 10; 
+    }
+    if (sumString.length == 2) {
+      array[i] = int.parse(
+          sumString.substring(sumString.length - 1, sumString.length));
     }
     if (i == 0 && sum >= 10) {
-      array.insert(0, 1); 
+      array.insert(
+          0,
+          int.parse(
+              sumString.substring(sumString.length - 2, sumString.length - 1)));
     }
   }
+  print(array);
   return array;
 }
 }
