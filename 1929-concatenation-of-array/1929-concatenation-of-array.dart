@@ -1,6 +1,6 @@
 class Solution {
   List<int> getConcatenation(List<int> nums) {
-      List<int> concatenateNumber = [];
+    List<int> concatenateNumber = [];
   List<String> concatenateNumberIndex = [];
   concatenateNumber.addAll(nums);
   String index;
