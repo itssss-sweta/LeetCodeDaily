@@ -2,7 +2,7 @@ class Solution {
 
     bool isPalindrome(int x) {
         if (x < 0) {
-            return false; // Negative numbers are not palindromes
+            return false; 
         }
 
         int original = x;
